@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Resume</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div style="display:flex;">
+                <div class="flag" id="aboutMe">
+                    <img src="img/icon/flag.png" data-anijs="if: mouseover, do: fadeInDown animated">
+                    <div class="flagText">About me</div>
+                </div>
+                <ul class="flagBar">
+                    <li data-anijs="if: click, do: fadeInDown animated, to:#aboutMe"><a href="#aboutMe">About me</a></li>
+                    <li data-anijs="if: click, do: fadeInDown animated delay-sm, to:#growUp"><a href="#growUp">成長歷程</a></li>
+                    <li data-anijs="if: click, do: fadeInDown animated delay-sm, to:#skills"><a href="#skills">我的技能</a></li>
+                    <li data-anijs="if: click, do: fadeInDown animated delay-sm, to:#university" style="border: none;"><a href="#university">大學生活</a></li>
+                </ul>
+            </div>
+            <div class="myDataContainer">
+                <div class="myPhoto">
+                    <img src="img/profile-photo.jpg" data-anijs="if: mouseover, do: swing animated">
+                </div>
+                <div class="myData">
+                    <div>
+                        <div style="font-size: 52px; font-weight: 600;">葉絮喬</div>
+                        <div style="font-size: 24px; font-weight: 500; line-height: 50px;">
+                            中原大學－資訊管理學系
+                            <br>
+                            桃園平鎮
+                            2003/01/21
+                            
+                        </div>
+                        <div class="contactIcon">
+                            <a href="https://www.instagram.com/yxq_0121/" target="_blank"><img src="img/icon/ig.png" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=100008879311058" target="_blank"><img src="img/icon/fb.png" alt=""></a>
+                            <a href="mailto:yxuqiao0121@gmail.com"><img src="img/icon/gmail.png" alt=""></a>
+                            <img src="img/icon/line.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="introduce">
+                    　　嗨！我叫葉絮喬，我的名字三個字都跟植物有關，爸爸媽媽希望我能和棉絮一樣給人溫柔純潔的感覺，也希望我像高聳的喬木一樣有堅忍不拔的精神，於是幫我取了這個剛柔並濟的名字。
+                </div>
+                <div class="hashtag">
+                    ＃寫code好好玩     ＃什麼都好奇     ＃選擇困難     ＃優柔寡斷     ＃慢熟     ＃親切開朗     ＃夜貓
+                </div>
+            </section>
+    
+       </article>
+       <article>
+            <div class="flag" id="growUp">
+                <img src="img/icon/flag.png" data-anijs="if: mouseover, do: fadeInDown animated">
+                <div class="flagText">成長歷程</div>
+            </div>
+
+            <section>
+                <div class="experience">
+                    <div class="circle">學習<br>經歷</div>
+                    <div class="timeline">
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>中原大學－資訊管理學系</h2>
+                            <div class="timeContent">
+                                <div class="date">2021/09 - Present</div>
+                                <div>因為喜歡寫程式，也不排斥讀會計經濟，就選擇讀資管了！</div>
+                            </div>
+                        </div>
+                        <img src="img/cycuim.jpg" id="cycuim" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>中壢高商－資料處理科</h2>
+                            <div class="timeContent">
+                                <div class="date">2018/09 - 2021/06</div>
+                                <div>在這裡第一次接觸到程式，發現自己對寫程式有興趣～</div>
+                            </div>
+                        </div>
+                        <img src="img/clvsc.jpg" id="clvsc" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>平鎮國中</h2>
+                            <div class="timeContent">
+                                <div class="date">2015/09 - 2018/06</div>
+                                <div>目前人生最認真讀書時期，之後沒再那麼認真過了哈哈..</div>
+                            </div>
+                        </div>                        
+                        <img src="img/pjjs.jpg" id="pjjs" class="hidden">
+                    </div>
+                    <div style="height: 320px; display: flex; align-items: center;">
+                        <!-- <img src="img/cycuim.jpg" id="cycuim" class="hidden">
+                        <img src="img/clvsc2.jpg" id="clvsc" class="hidden">
+                        <img src="img/pjjs.jpg" id="pjjs" class="hidden"> -->
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <hr style="border-color:#a8b8b7;" noshade>
+                </div>
+
+                <div class="experience">
+                    <div class="circle">打工<br>經驗</div>
+                    <div class="timeline">
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>中原大學學發中心工讀生</h2>
+                            <div class="timeContent">
+                                <div>2023/02 - Present</div>
+                                <div>負責開發學發中心的一些網頁，目前還在學習中。</div>
+                            </div>
+                        </div>
+                        <img src="img/cycuim.jpg" id="cycuim" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>OK Mart</h2>
+                            <div class="timeContent">
+                                <div>2022/07 - Present</div>
+                                <div>假日打工賺生活費~順便訓練自己跟陌生人應對的能力。</div>
+                            </div>
+                        </div>
+                        <img src="img/ok-mart.jpg" id="clvsc" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>中壢高商學務處工讀生</h2>
+                            <div class="timeContent">
+                                <div>2019/02 - 2020/03</div>
+                                <div>中午不愛睡覺，就去學務處幫忙，變得很會用word、excel。</div>
+                            </div>
+                        </div>                        
+                        <img src="img/clvsc.jpg" id="pjjs" class="hidden">
+                    </div>
+                    <div style="height: 320px; display: flex; align-items: center;">
+                    </div>
+                </div>
+
+                
+            </section>
+
+            
+            
+        </article>
+        <article>
+            <div class="flag" id="skills">
+                <img src="img/icon/flag.png" data-anijs="if: mouseover, do: fadeInDown animated">
+                <div class="flagText">我的技能</div>
+            </div>
+           
+            <section>
+                <div class="skillContainer">
+                    <div class="skillCol">
+                        <div class="skillTitle">
+                            專業技能
+                        </div>
+                        <div class="skill">
+                            <div class="skillText">
+                                前端網頁開發(HTML/CSS/JS)
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(70,0)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    70%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skillText">
+                                後端網頁開發(JSP)
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(85,1)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    85%
+                                </div>
+                            </div>
+                        </div><div class="skill">
+                            <div class="skillText">
+                                資料庫管理(Mysql)
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(75,2)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    75%
+                                </div>
+                            </div>
+                        </div><div class="skill">
+                            <div class="skillText">
+                                文書處理(Word/Excel)
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(80,3)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    97%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillCol">
+                        <div class="skillTitle">
+                            程式技能
+                        </div>
+                        <div class="skill">
+                            <div class="skillText">
+                                Python
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(85,4)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    85%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skillText">
+                                Java
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(75,5)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    75%
+                                </div>
+                            </div>
+                        </div><div class="skill">
+                            <div class="skillText">
+                                Visual Basic
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(80,6)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    80%
+                                </div>
+                            </div>
+                        </div><div class="skill">
+                            <div class="skillText">
+                                Vue
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(40,7)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    40%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillCol" style="border: none;">
+                        <div class="skillTitle">
+                            技術證照
+                        </div>
+                        <div class="skill flex-left">
+                            <img src="img/icon/stamp.png" height="60px">
+                            <div class="skillText text-2xl">
+                                電腦軟體應用乙級證照
+                            </div>
+                        </div>
+                        <div class="skill flex-left">
+                            <img src="img/icon/stamp.png" height="60px">
+                            <div class="skillText text-2x">
+                                電腦軟體應用丙級證照
+                            </div>
+                        </div>
+                        <div class="skill flex-left">
+                            <img src="img/icon/stamp.png" height="60px">
+                            <div class="skillText text-2x">                        
+                                會計事務-人工記帳丙級證照
+                            </div>
+                        </div>
+                        <div class="skill flex-left">
+                            <img src="img/icon/stamp.png" height="60px">
+                            <div class="skillText text-2x">
+                                會計事務-資訊丙級證照
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+        <article>
+            <div class="flag" id="university">
+                <img src="img/icon/flag.png" data-anijs="if: mouseover, do: fadeInDown animated">
+                <div class="flagText">大學生活</div>
+            </div>
+            
+            <section class="tab_css">
+                <input id="tab1" type="radio" name="tab" checked="checked"/>
+                <label for="tab1">課程活動</label>
+                <div class="tab_content">
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/manage.jpg">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        管理學－變裝公益園遊會
+                                    </div>
+                                    <div class="cardContent">
+                                        到園遊會擔任一日關主，陪小朋友和長輩們玩遊戲，有些小朋友真的有在認真變裝欸！變裝成恐龍之類的，超可愛，但我們就只有帶個髮箍而已哈哈。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/bee-ig.jpg" >
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        企業概論－蜜濃於口，暖繫在心
+                                    </div>
+                                    <div class="cardContent">
+                                        我們挑戰從無到有創辦一個小小的企業，這也是我第一次上街賣東西，我才發現我的膽子好像也沒我自己想像的那麼小，路人迎面而來我都敢直接衝上前問。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/web-design.png">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        網路程式設計－DFFDY乾燥花專賣店
+                                    </div>
+                                    <div class="cardContent">
+                                        第一次認真的設計一個網站，很幸運遇到一組給力的前端好夥伴，讓我們的後端也進行得很順利，很喜歡最後的成果，是目前覺得最有成就感的一次分組活動。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/poker.png">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        Python商業應用－撲克牌排七遊戲
+                                    </div>
+                                    <div class="cardContent">
+                                        在大一下的時候我有自己試著用Java寫出只能用終端機玩的排七遊戲，大二上學期修了Python商業應用，老師要我們期末自訂主題，做一個.py檔的程式，
+                                        我就想把之前做的排七遊戲做完整，雖然版面看起來很陽春，但是該有的功能都有，老師還誇我們做得不錯～這是我很喜歡的一門課！
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input id="tab2" type="radio" name="tab"/>
+                <label for="tab2">系上活動</label>
+                <div class="tab_content">
+                    <div class="card">
+                        <div class="contentContainer" style="width: 95%; margin: auto;">
+                            <div class="borderOutside" style="width: 100%;">
+                                <div class="titleBorder" style="width: 100%;">
+                                    <div class="cardTitle">
+                                        資管系系學會－執秘
+                                    </div>
+                                    <div class="cardContent">
+                                        誤打誤撞就不小心接下了系學會執秘這個幹部，沒做什麼大事，但也陸陸續續參加了很多小活動。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/camp-game.png">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        迎新宿營
+                                    </div>
+                                    <div class="cardContent">
+                                        當活動組的工作人員，不得不說我覺得那個暑假是我升上大學以來最累的兩個月，接觸到很多平常不太會接觸到的活動，算是一種特別的體驗~
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/topic.jpg">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        專題競賽工作人員
+                                    </div>
+                                    <div class="cardContent">
+                                        在報到組當工作人員，輕輕鬆鬆的工作，我覺得當這個活動的工作人員很有趣，可以觀摩大四學長姊的畢業專題報告，看到很多學長姊都很厲害，會讓我想向他們看齊。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/knowledge.jpg">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        資識王關主
+                                    </div>
+                                    <div class="cardContent">
+                                        系上辦的可愛的小活動，有得吃又有得玩，我超認真出了很多題目難倒大家。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <input id="tab3" type="radio" name="tab"/>
+                <label for="tab3">班級活動</label>
+                <div class="tab_content">
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/im-night.png">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        資管之夜－道具組組長
+                                    </div>
+                                    <div class="cardContent">
+                                        我們十幾個人一起做了超多道具，雖然有一些道具在台上放在地板上拍不到。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card flex-left">
+                        <div class="imgContainer">
+                            <img src="img/xmas.jpg">
+                        </div>
+                        <div class="contentContainer">
+                            <div class="borderOutside">
+                                <div class="titleBorder">
+                                    <div class="cardTitle">
+                                        聖誕交換禮物+ktv
+                                    </div>
+                                    <div class="cardContent">
+                                        因為很懷念高中時和同學過聖誕節的氣氛，想要大學也留下一些回憶，就和兩位同學一起邀請班上同學舉辦聖誕活動，雖然參加的人不多，但是辦得還算成功。
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+            
+           
+        </article>
+        <a href="#">
+            <div class="top">
+                Top
+            </div>
+        </a>
+    </main>
+    <footer>
+        <div style="margin: 32px; text-align: center;">
+            <hr style="border-color:#ffffff" noshade>
+            <div style="margin-top: 32px;">
+                Copyright @2023 Xu-Chiao Yeh
+                <br>
+                快做完才發現這個網頁用80%看好像比較好看，但是來不及修了ಥ_ಥ
+            </div>
+        </div>
+    </footer>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <script>
+        $(function(){
+        
+        $(window).scroll(function(){
+            //var $(window).scrollTop(); 為 scroll
+            var scroll = $(window).scrollTop();
+            
+            if( scroll >= 70){
+            // 當卷軸超過70px,.gototop就淡入，如果小於就淡出
+            $(".top").fadeIn();
+            
+            }else{
+            
+            $(".top").fadeOut();
+            
+            }
+        });
+        // 當我按下.gototop時，添加動畫讓卷軸跑道最上面
+        $('.top').click(function(){
+            $('html,body').animate({
+            scrollTop:$('html').offset().top
+            })
+            
+            return false;
+        });
+
+        })
+    </script>
+    <script>
+        window.onload= function text(){
+        move(70,0);
+        move(80,1);
+        move(75,2);
+        move(97,3);
+        move(85,4);
+        move(75,5);
+        move(80,6);
+        move(40,7);
+        }
+        function move(num,index){
+            var value = 1;
+            var id =setInterval(frame, 20)
+            function frame() {
+                var ans = document.getElementsByClassName("degree")[index];
+                if(value >=num){
+                    clearInterval(id);
+                }
+                else{
+                    value++;
+                    ans.value=value;
+                }
+            }
+        }
+        
+    </script>
+      
+</body>
+
+</html>
