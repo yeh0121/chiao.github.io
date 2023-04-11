@@ -13,10 +13,6 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-        </nav>
-    </header>
     <main>
         <article>
             <div style="display:flex;">
@@ -358,7 +354,9 @@
 
                     <div class="card flex-left">
                         <div class="imgContainer">
-                            <img src="img/web-design.png">
+                            <a href="https://xin1602.github.io/dffdy/"> 
+                                <img src="img/web-design.png">
+                            </a>
                         </div>
                         <div class="contentContainer">
                             <div class="borderOutside">
@@ -369,6 +367,12 @@
                                     <div class="cardContent">
                                         第一次認真的設計一個網站，很幸運遇到一組給力的前端好夥伴，讓我們的後端也進行得很順利，很喜歡最後的成果，是目前覺得最有成就感的一次分組活動。
                                     </div>
+                                    <a href="https://xin1602.github.io/dffdy/">
+                                        <div class="link flex-center">
+                                            <img src="img/icon/link.png" alt="">
+                                            DFFDY
+                                        </div>
+                                    </a>
                             </div>
                             </div>
                         </div>
@@ -530,34 +534,6 @@
     </footer>
     <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
     <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
-    <script>
-        $(function(){
-        
-        $(window).scroll(function(){
-            //var $(window).scrollTop(); 為 scroll
-            var scroll = $(window).scrollTop();
-            
-            if( scroll >= 70){
-            // 當卷軸超過70px,.gototop就淡入，如果小於就淡出
-            $(".top").fadeIn();
-            
-            }else{
-            
-            $(".top").fadeOut();
-            
-            }
-        });
-        // 當我按下.gototop時，添加動畫讓卷軸跑道最上面
-        $('.top').click(function(){
-            $('html,body').animate({
-            scrollTop:$('html').offset().top
-            })
-            
-            return false;
-        });
-
-        })
-    </script>
     <script>
         window.onload= function text(){
         move(70,0);
